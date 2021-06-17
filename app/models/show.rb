@@ -9,6 +9,6 @@ class Show < ActiveRecord::Base
   end
   
   def self.lowest_rating
-    self.
+    self.minimum("rating")
   end
 end
